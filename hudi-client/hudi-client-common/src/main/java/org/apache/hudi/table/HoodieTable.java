@@ -739,4 +739,7 @@ public abstract class HoodieTable<T extends HoodieRecordPayload, I, K, O> implem
     return Option.empty();
   }
 
+  public HoodieTableMetadata getMetadataTable() {
+    return this.metadata;
+  }
 }
