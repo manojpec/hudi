@@ -191,7 +191,6 @@ public class SparkHoodieBackedTableMetadataWriter extends HoodieBackedTableMetad
             fileGroupCount));
         r.setCurrentLocation(new HoodieRecordLocation(slice.getBaseInstantTime(), slice.getFileId()));
         return r;
-
       });
 
       if (rddAllPartitionRecords == null) {
